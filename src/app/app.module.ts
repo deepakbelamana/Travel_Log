@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { UserSignUpComponent } from './user-sign-up/user-sign-up.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-  
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

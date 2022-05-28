@@ -12,4 +12,8 @@ export class UserSignUpComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  registrationValidtor(event:any)
+  {
+    console.log(event)
+  }
 }
