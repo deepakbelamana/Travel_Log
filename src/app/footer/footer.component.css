@@ -1,0 +1,13 @@
+.footer
+{
+    width:100%;
+    bottom: 0;
+    height: 25vh;
+    background-color: rgb(228, 227, 227);
+}
+
+.col-sm{
+    position: relative;
+    text-align: center;
+    top:20px;
+}
