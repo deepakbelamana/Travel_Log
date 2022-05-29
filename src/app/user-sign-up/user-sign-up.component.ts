@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegisterServerService } from '../register-server.service';
 
 @Component({
   selector: 'app-user-sign-up',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserSignUpComponent implements OnInit {
 
-  constructor() { }
+  constructor(private registerServer:RegisterServerService) { }
 
   ngOnInit(): void {
   }
@@ -15,5 +16,12 @@ export class UserSignUpComponent implements OnInit {
   registrationValidtor(event:any)
   {
     console.log(event)
+    this.registerServer.registerUser(event).subscribe((res)=>
+    {
+      alert(res)
+    },(err)=>
+    {
+      alert('Server Issues,Try after some time')
+    })
   }
 }
