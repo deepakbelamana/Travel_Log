@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RegisterServerService } from '../register-server.service';
+import { RegisterServerService } from '../../services/register-server.service';
 
 @Component({
   selector: 'app-user-sign-up',
